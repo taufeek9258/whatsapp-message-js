@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto WhatsApp Message</title>
+  <script>
+    window.onload = function() {
+      // Replace this with your bhai's number in international format (without +)
+      var phoneNumber = "+919627104808"; // 91 = India, replace with actual number
+
+      // Unique message
+      var message = encodeURIComponent("🤗 Successfully sent a WhatsApp message directly from the browser using JavaScript! 💬💻 ❤️ – Taufeek");
+
+      // WhatsApp URL
+      var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + message;
+
+      // Redirect to WhatsApp
+      window.location.href = whatsappUrl;
+    };
+  </script>
+</head>
+<body>
+  <h2 style="text-align: center;">📤 Sending WhatsApp Message...</h2>
+</body>
+</html>
